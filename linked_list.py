@@ -1,6 +1,5 @@
 from memory_profiler import profile
 
-
 class Node:
     '''
     Node object.
@@ -53,7 +52,7 @@ class LinkedList:
             nodes.append(node.data)
 
         nodes.append("NIL")
-        return " --> ".join(nodes)
+        return "\n" + " --> ".join(nodes)
     
 
     def __len__(self):
@@ -198,3 +197,21 @@ class LinkedList:
             previous_node = current_node
 
         print('Reference node {} not found in linked list...'.format(reference_node))
+
+
+    def reverse(self):
+
+        if self.start is None:
+            return "Empty List ..."
+        
+        current_node = self.start
+        prev_node = None
+        next_node = None
+
+        while current_node != None:
+            next_node = current_node.next
+            current_node.next = prev_node
+            prev_node = current_node
+            current_node = next_node
+
+        self.start = prev_node
