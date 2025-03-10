@@ -38,4 +38,4 @@ Para evaluar el funcionamiento de su código, deberá realizar lo siguiente en e
 
 ## Results
 
-![Console Results]https://github.com/JuanOchaita/reverse-linked-list/blob/master/imgs/TestReverse.jpg
+![Console Results](https://github.com/JuanOchaita/reverse-linked-list/blob/master/imgs/TestReverse.jpg)
